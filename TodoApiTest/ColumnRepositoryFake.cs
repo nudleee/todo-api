@@ -30,27 +30,6 @@ namespace TodoApiUnitTest
         {
             return columns.Find(c => c.ColumnId == columnID);
         }
-              
-
-        private bool disposed = false;
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!this.disposed)
-            {
-                if (disposing)
-                {
-                    foreach (var c in columns)
-                    {
-                        columns.Remove(c);
-                    }
-                }
-            }
-            this.disposed = true;
-        }
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
+                     
     }
 }

@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using TodoApi.Models;
 
 namespace TodoApi.DAL
 {
-    public interface IColumnRepository : IDisposable
+    public interface IColumnRepository
     {
         List<Column> GetColumns();
         Column GetColumnByID(int columnID);

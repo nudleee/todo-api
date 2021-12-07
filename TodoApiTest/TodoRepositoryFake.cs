@@ -55,26 +55,6 @@ namespace TodoApiUnitTest
             todos.Remove(_todo);
             return _todo;
         }
-
-        private bool disposed = false;
-        protected virtual void Dispose(bool disposing)
-        {
-            if (!this.disposed)
-            {
-                if (disposing)
-                {
-                    foreach (var t in todos)
-                    {
-                        todos.Remove(t);
-                    }
-                }
-            }
-            this.disposed = true;
-        }
-        public void Dispose()
-        {
-            Dispose(true);
-            GC.SuppressFinalize(this);
-        }
+             
     }
 }

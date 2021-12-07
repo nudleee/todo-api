@@ -1,10 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using TodoApi.Models;
 
 namespace TodoApi.DAL
 {
-    public interface ITodoRepository : IDisposable
+    public interface ITodoRepository
     {
         List<Todo> GetTodos();
         Todo GetTodoByID(long todoID);
