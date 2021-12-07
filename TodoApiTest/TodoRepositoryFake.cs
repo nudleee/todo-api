@@ -16,7 +16,18 @@ namespace TodoApiUnitTest
             new Todo(){TodoId = 3, TodoTitle = "Fake3", ColumnId = 2 },
             new Todo(){TodoId = 4, TodoTitle = "Fake4", ColumnId = 4 }
         };
-        
+
+
+        public List<Todo> GetTodos()
+        {
+            return todos;
+        }
+
+        public Todo GetTodoByID(long todoID)
+        {
+            Todo _todo = todos.FirstOrDefault(t => t.TodoId == todoID);
+            return _todo;
+        }
 
         public Todo AddTodo(Todo todo)
         {
@@ -37,16 +48,6 @@ namespace TodoApiUnitTest
             return _todo;
         }
 
-        public Todo GetTodoByID(long todoID)
-        {
-            Todo _todo = todos.FirstOrDefault(t => t.TodoId == todoID);
-            return _todo;
-        }
-
-        public List<Todo> GetTodos()
-        {
-            return todos;
-        }
 
         public Todo RemoveTodo(long todoID)
         {

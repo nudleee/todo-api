@@ -21,6 +21,17 @@ namespace TodoApiUnitTest
                 },
          };
 
+        public List<Column> GetColumns()
+        {
+            return columns;
+        }
+
+        public Column GetColumnByID(int columnID)
+        {
+            return columns.Find(c => c.ColumnId == columnID);
+        }
+              
+
         private bool disposed = false;
         protected virtual void Dispose(bool disposing)
         {
@@ -40,26 +51,6 @@ namespace TodoApiUnitTest
         {
             Dispose(true);
             GC.SuppressFinalize(this);
-        }
-
-        public Column GetColumnByID(int columnID)
-        {
-            Console.WriteLine(columns);
-            foreach (var c in columns)
-            {
-                if (c.ColumnId == columnID)
-                {
-                    Console.WriteLine(c);
-                    return c;
-                }
-            }
-
-            return null;
-        }
-
-        public List<Column> GetColumns()
-        {
-            return columns;
         }
     }
 }
