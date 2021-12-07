@@ -11,7 +11,7 @@ Futtatás után a [http://localhost:5000/api/columns](http://localhost:5000/api/
 
 Az API elsősorban a [TodoApp](https://github.com/nudleee/react-todo-app) backend-eként szolgál. 
 
-## Végpontok
+### Végpontok
 
 `GET /api/columns` visszatér az Oszlopokkal és a benne található Teendőkkel
 
@@ -27,7 +27,7 @@ Az API elsősorban a [TodoApp](https://github.com/nudleee/react-todo-app) backen
 
 `DELETE /api/columns/{id}` eltávolít egy Teendőt
 
-## Szerkezet
+### Szerkezet
 
 Az API a követi a Repository Pattern-t ezért a benne található Modellek (Column, Todo) mindegyikéhez tartozik egy Resository.
 Ezeken a Repository-kon keresztül tudjuk elérni az adataot Controllerek-ből. 
