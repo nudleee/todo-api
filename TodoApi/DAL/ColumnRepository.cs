@@ -30,7 +30,7 @@ namespace TodoApi.DAL
                 }
             }
 
-
+           
             return columns;
         }
         public  Column GetColumnByID(int columnID)
@@ -45,6 +45,8 @@ namespace TodoApi.DAL
                     column.Todos.Add(t);
                 }
             }
+           
+
             return column;
 
         }
