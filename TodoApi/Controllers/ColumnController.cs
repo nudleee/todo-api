@@ -44,6 +44,19 @@ namespace TodoApi.Controllers
             return res;
         }
 
+        [HttpPut("todos")]
+        public ActionResult<List<Todo>> UpdateTodos( [FromBody]List<Todo> todos)
+        {
+            var res = columntRepository.UpdateTodos(todos);
+            if(res == null)
+            {
+                return NotFound();
+            }
+
+            return res;
+                
+        }
+
 
     }
 }

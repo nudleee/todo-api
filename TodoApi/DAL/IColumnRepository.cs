@@ -7,5 +7,6 @@ namespace TodoApi.DAL
     {
         List<Column> GetColumns();
         Column GetColumnByID(int columnID);
+        List<Todo> UpdateTodos( List<Todo> todos);
     }
 }
