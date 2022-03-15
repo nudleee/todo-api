@@ -2,7 +2,7 @@
 
 ## Elindítás
 
-A kód futtatásához vagy Visual Studio vagy Visial Studio Code-ra lesz szükség, amit [itt](https://visualstudio.microsoft.com/free-developer-offers/) lehet letölteni.
+A kód futtatásához vagy Visual Studio vagy Visial Studio Code-ra lesz szükség, amit [itt](https://visualstudio.microsoft.com/free-developer-offers/) lehet letölteni. Az adatbázishoz pedig [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) szükséges
 
 A fórráskód letöltése és kicsomagolása után nyissuk meg a `TodoApi.sln` fájlt, amit utánna a `Shift`+`5` billentyűkombinációval futtathatunk.
 Futtatás után a [http://localhost:5000/api/columns](http://localhost:5000/api/columns) oldal nyílik meg.
